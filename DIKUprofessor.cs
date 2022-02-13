@@ -26,7 +26,7 @@ namespace DIKUdebate
         }
 
         public override bool HasLost() {
-            System.Console.WriteLine("I can not be defeated muahaha!");
+            System.Console.WriteLine("I cannot be defeated muahaha!");
             return false;
         }
     }

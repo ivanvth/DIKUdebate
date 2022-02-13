@@ -43,10 +43,10 @@ namespace DIKUdebate
         public void Argue(DIKUperson opponent) {
             int attackStrength = StrengthOfArgument;
             if (CriticalArgument > rand.Next(101)) {
-                System.Console.WriteLine("{0} strikes an argument at {1} for {2} points of draining.", Name, opponent.Name, StrengthOfArgument * 2);
                 attackStrength *= 2;
+                System.Console.WriteLine("{0} strikes an argument at {1} for {2} points of draining.", Name, opponent.Name, attackStrength);
             } else {
-                System.Console.WriteLine("{0} strikes an argument at {1} for {2} points of draining.", Name, opponent.Name, StrengthOfArgument);
+                System.Console.WriteLine("{0} strikes an argument at {1} for {2} points of draining.", Name, opponent.Name, attackStrength);
             }
             opponent.BeDrained(attackStrength);
         }
