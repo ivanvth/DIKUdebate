@@ -16,7 +16,7 @@ namespace DIKUdebate
             Name = name;
         }
 
-        public virtual void getExperience() {
+        public virtual void GetExperience() {
             System.Console.WriteLine(this + " gained experience!");
             StrengthOfArgument += 2;
             
@@ -48,9 +48,9 @@ namespace DIKUdebate
             } else {
                 System.Console.WriteLine("{0} strikes an argument at {1} for {2} points of draining.", Name, opponent.Name, StrengthOfArgument);
             }
-            opponent.beDrained(attackStrength);
+            opponent.BeDrained(attackStrength);
         }
-        public virtual bool beDrained(int amount) {
+        public virtual bool BeDrained(int amount) {
             if (CounterArgument > rand.Next(101)) {
                 System.Console.WriteLine(Name + " dodged the drain!");
                 return false;

@@ -11,11 +11,11 @@ namespace DIKUdebate
             CriticalArgument = 20;
         }
 
-        public override void getExperience()
+        public override void GetExperience()
         {
             System.Console.WriteLine("My power cannot be increased further.");
         }
-        public override bool beDrained(int amount) {
+        public override bool BeDrained(int amount) {
             if (CounterArgument > rand.Next(101)) {
                 System.Console.WriteLine(Name + " dodged the drain!");
                 return false;

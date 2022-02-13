@@ -13,10 +13,10 @@ namespace DIKUdebate
             CriticalArgument = 10;
         }
 
-        public override void getExperience()
+        public override void GetExperience()
         {
             Semester += 1;
-            base.getExperience();
+            base.GetExperience();
         }
     }
 }

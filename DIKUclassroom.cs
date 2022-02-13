@@ -43,7 +43,7 @@ namespace DIKUdebate
             Console.WriteLine ("The winner is: {0} ", winner);
             // Make the winning student get experience
             // Then return the winning student .
-            winner.getExperience();
+            winner.GetExperience();
             return winner;
         }
     }
