@@ -2,14 +2,14 @@
     public class Program {
         static void Main(string[] args) {
             DIKUperson dikustudent1 = new DIKUstudent("Albert", DIKUpreparation.ReadingSome);
-            DIKUstudent dikustudent2 = new DIKUstudent("Bertha", DIKUpreparation.ReadingSome);
+            DIKUperson dikustudent2 = new DIKUstudent("Bertha", DIKUpreparation.ReadingSome);
             DIKUperson dikustudent3 = new DIKUstudent("Caesar", DIKUpreparation.ReadingNone);
             DIKUperson dikustudent4 = new DIKUstudent("Debrah", DIKUpreparation.ReadingAll);
             DIKUperson dikustudent5 = new DIKUstudent("Erik", DIKUpreparation.ReadingNone);
             DIKUperson dikustudent6 = new DIKUstudent("Franz", DIKUpreparation.ReadingAll);
 
-            DIKUprofessor dikuprofessor1 = new DIKUprofessor("George", DIKUpreparation.ReadingAll);
-            DIKUprofessor dikuprofessor2 = new DIKUprofessor("Hansi", DIKUpreparation.ReadingAll);
+            DIKUperson dikuprofessor1 = new DIKUprofessor("George", DIKUpreparation.ReadingAll);
+            DIKUperson dikuprofessor2 = new DIKUprofessor("Hansi", DIKUpreparation.ReadingAll);
 
             List<DIKUperson> students = new List<DIKUperson>();
             students.Add(dikustudent1);
