@@ -1,7 +1,7 @@
 namespace DIKUdebate {
     public class DIKUstudent : DIKUperson {
         private int Semester {get; set;}
-        public DIKUstudent(string name, DIKUPreparation preparation) : base(name) {
+        public DIKUstudent(string name, DIKUpreparation preparation) : base(name) {
             Preparation = preparation;
             Semester = 1;
             MaxIntellect = 30;

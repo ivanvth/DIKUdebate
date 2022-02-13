@@ -1,5 +1,5 @@
 namespace DIKUdebate {
-    public enum DIKUPreparation {
+    public enum DIKUpreparation {
         ReadingAll,
         ReadingSome,
         ReadingNone

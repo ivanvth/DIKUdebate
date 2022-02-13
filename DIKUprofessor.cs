@@ -1,6 +1,6 @@
 namespace DIKUdebate {
     public class DIKUprofessor : DIKUperson {
-        public DIKUprofessor(string name, DIKUPreparation preparation) : base(name) {
+        public DIKUprofessor(string name, DIKUpreparation preparation) : base(name) {
             Preparation = preparation;
             MaxIntellect = 300;
             Intellect = 300;

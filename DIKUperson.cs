@@ -7,7 +7,7 @@ namespace DIKUdebate {
         
         protected int CounterArgument {get; set;}
         protected int CriticalArgument {get; set;}
-        protected DIKUPreparation Preparation {get; set;}
+        protected DIKUpreparation Preparation {get; set;}
 
         protected Random rand = new Random();
         public DIKUperson(string name) {
@@ -17,9 +17,9 @@ namespace DIKUdebate {
         public virtual void GetExperience() {
             System.Console.WriteLine(this + " gained experience!");
             StrengthOfArgument += 2;
-            MaxIntellect += (Preparation == DIKUPreparation.ReadingNone) ? 20 : 10;
-            CounterArgument += (Preparation == DIKUPreparation.ReadingAll || Preparation == DIKUPreparation.ReadingSome) ? 6 : 3;
-            CriticalArgument += (Preparation == DIKUPreparation.ReadingAll) ? 6 : 3;
+            MaxIntellect += (Preparation == DIKUpreparation.ReadingNone) ? 20 : 10;
+            CounterArgument += (Preparation == DIKUpreparation.ReadingAll || Preparation == DIKUpreparation.ReadingSome) ? 6 : 3;
+            CriticalArgument += (Preparation == DIKUpreparation.ReadingAll) ? 6 : 3;
             Intellect = MaxIntellect;
         }
         public void Argue(DIKUperson opponent) {
