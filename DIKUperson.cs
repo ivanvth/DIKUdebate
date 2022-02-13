@@ -61,14 +61,11 @@ namespace DIKUdebate
         }
 
         public virtual bool HasLost() {
-            if (Intellect <= 0) {
-                return true;
-            }
-            return false;
+            return (Intellect <= 0) ? true : false;
         }
 
         override public string ToString() {
-            return String.Format("{0}: Intellect: {1} [{2}]", Name, Intellect, this.GetType());
+            return String.Format("{0}: MaxIntellect: {1} [{2}]", Name, MaxIntellect, this.GetType());
         }
     }
 }
