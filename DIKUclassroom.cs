@@ -3,7 +3,6 @@ namespace DIKUdebate
     public class DIKUclassroom
     {
         public DIKUperson RunDebate(List<DIKUperson> persons) {
-            //List<DIKUperson> persons = persons;
             List<DIKUperson> winners = new List<DIKUperson>();
             while (persons.Count + winners.Count > 1) {
                 while (persons.Count >= 2) {
