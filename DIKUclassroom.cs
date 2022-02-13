@@ -34,11 +34,6 @@ namespace DIKUdebate
             {
                 Console.WriteLine ("ROUND: {0}", round);
                 current.Argue(inactive);
-                // Make the active student argue
-                // against the inactive !
-                // ...
-                // Switching them , such that the
-                // inactiveStudent is current and can argue back !
                 var temp = current;
                 current = inactive;
                 inactive = temp;
