@@ -1,7 +1,5 @@
-namespace DIKUdebate
-{
-    public class DIKUperson
-    {
+namespace DIKUdebate {
+    public class DIKUperson {
         protected string Name {get; set;}
         protected int MaxIntellect {get; set;}
         protected int Intellect {get; set;}

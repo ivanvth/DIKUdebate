@@ -1,7 +1,5 @@
-namespace DIKUdebate
-{
-    public class DIKUclassroom
-    {
+namespace DIKUdebate {
+    public class DIKUclassroom {
         public DIKUperson RunDebate(List<DIKUperson> persons) {
             List<DIKUperson> winners = new List<DIKUperson>();
             while (persons.Count + winners.Count > 1) {

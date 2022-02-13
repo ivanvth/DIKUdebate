@@ -1,7 +1,5 @@
-namespace DIKUdebate
-{
-    public class DIKUstudent : DIKUperson
-    {
+namespace DIKUdebate {
+    public class DIKUstudent : DIKUperson {
         private int Semester {get; set;}
         public DIKUstudent(string name, DIKUPreparation preparation) : base(name) {
             Preparation = preparation;
@@ -13,8 +11,7 @@ namespace DIKUdebate
             CriticalArgument = 10;
         }
 
-        public override void GetExperience()
-        {
+        public override void GetExperience() {
             Semester += 1;
             base.GetExperience();
         }

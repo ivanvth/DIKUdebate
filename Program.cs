@@ -1,7 +1,6 @@
 ﻿namespace DIKUdebate {
     public class Program {
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
             DIKUperson dikustudent1 = new DIKUstudent("Albert", DIKUPreparation.ReadingSome);
             DIKUstudent dikustudent2 = new DIKUstudent("Bertha", DIKUPreparation.ReadingSome);
             DIKUperson dikustudent3 = new DIKUstudent("Caesar", DIKUPreparation.ReadingNone);

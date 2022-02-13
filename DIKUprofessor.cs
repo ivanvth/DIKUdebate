@@ -1,7 +1,5 @@
-namespace DIKUdebate
-{
-    public class DIKUprofessor : DIKUperson
-    {
+namespace DIKUdebate {
+    public class DIKUprofessor : DIKUperson {
         public DIKUprofessor(string name, DIKUPreparation preparation) : base(name) {
             Preparation = preparation;
             MaxIntellect = 300;
@@ -11,8 +9,7 @@ namespace DIKUdebate
             CriticalArgument = 20;
         }
 
-        public override void GetExperience()
-        {
+        public override void GetExperience() {
             System.Console.WriteLine("My power cannot be increased further.");
         }
         public override bool BeDrained(int amount) {
