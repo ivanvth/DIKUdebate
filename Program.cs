@@ -3,12 +3,14 @@
         static void Main(string[] args)
         {
             DIKUperson dikustudent1 = new DIKUstudent("Albert", DIKUPreparation.ReadingSome);
-            DIKUstudent dikustudent2 = new DIKUstudent("Berit", DIKUPreparation.ReadingSome);
-            DIKUperson dikustudent3 = new DIKUstudent("Debra", DIKUPreparation.ReadingNone);
-            DIKUperson dikustudent4 = new DIKUstudent("Erik", DIKUPreparation.ReadingAll);
-            DIKUperson dikustudent5 = new DIKUstudent("Franz", DIKUPreparation.ReadingNone);
-            DIKUperson dikustudent6 = new DIKUstudent("George", DIKUPreparation.ReadingAll);
-            DIKUprofessor dikuprofessor = new DIKUprofessor("Caesar", DIKUPreparation.ReadingAll);
+            DIKUstudent dikustudent2 = new DIKUstudent("Bertha", DIKUPreparation.ReadingSome);
+            DIKUperson dikustudent3 = new DIKUstudent("Caesar", DIKUPreparation.ReadingNone);
+            DIKUperson dikustudent4 = new DIKUstudent("Debrah", DIKUPreparation.ReadingAll);
+            DIKUperson dikustudent5 = new DIKUstudent("Erik", DIKUPreparation.ReadingNone);
+            DIKUperson dikustudent6 = new DIKUstudent("Franz", DIKUPreparation.ReadingAll);
+            
+            DIKUprofessor dikuprofessor1 = new DIKUprofessor("George", DIKUPreparation.ReadingAll);
+            DIKUprofessor dikuprofessor2 = new DIKUprofessor("George", DIKUPreparation.ReadingAll);
 
             List<DIKUperson> students = new List<DIKUperson>();
             students.Add(dikustudent1);
