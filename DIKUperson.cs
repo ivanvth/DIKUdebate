@@ -19,25 +19,9 @@ namespace DIKUdebate
         public virtual void GetExperience() {
             System.Console.WriteLine(this + " gained experience!");
             StrengthOfArgument += 2;
-            
-            if (Preparation == DIKUPreparation.ReadingNone) {
-                MaxIntellect += 20;
-            } else {
-                MaxIntellect += 10;
-            }
-            
-            if (Preparation == DIKUPreparation.ReadingAll || Preparation == DIKUPreparation.ReadingSome) {
-                CounterArgument += 6;
-            } else {
-                CounterArgument += 3;
-            }
-
-            if (Preparation == DIKUPreparation.ReadingAll) {
-                CriticalArgument += 6;
-            } else {
-                CriticalArgument += 3;
-            }
-
+            MaxIntellect += (Preparation == DIKUPreparation.ReadingNone) ? 20 : 10;
+            CounterArgument += (Preparation == DIKUPreparation.ReadingAll || Preparation == DIKUPreparation.ReadingSome) ? 6 : 3;
+            CriticalArgument += (Preparation == DIKUPreparation.ReadingAll) ? 6 : 3;
             Intellect = MaxIntellect;
         }
         public void Argue(DIKUperson opponent) {
@@ -61,7 +45,7 @@ namespace DIKUdebate
         }
 
         public virtual bool HasLost() {
-            return (Intellect <= 0) ? true : false;
+            return Intellect <= 0;
         }
 
         override public string ToString() {
